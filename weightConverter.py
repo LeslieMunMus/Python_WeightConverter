@@ -7,16 +7,16 @@ os.system("clear")
 
 def main():
     weight = float(input("Weight: "))
-    metric_symbol = input("(L)bs or (K)g: ")
+    unit = input("(L)bs or (K)g: ")
 
-    if metric_symbol.upper() == "K":
+    if unit.upper() == "K":
         calc = weight / 0.45
         print("You are %0.2f pounds" % (calc))
-    elif metric_symbol.upper() == "L":
+    elif unit.upper() == "L":
         calc = weight * 0.45
         print("You are %0.2f kilograms" % (calc))
     else:
-        print("The metric symbol you entered is not supported")
+        print("The unit you entered is not supported")
 
 
 if __name__ == "__main__":
