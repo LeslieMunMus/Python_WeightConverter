@@ -1,3 +1,6 @@
+# This is a program that takes a user input weight and askes for the
+#   metric unit used and converts it to the corresponding unit
+
 import os
 
 os.system("clear")
